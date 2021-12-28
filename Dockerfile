@@ -22,6 +22,7 @@ COPY . /mynodeapp
 
 # The next line is optional we do have to specify the port
 # when we run the container docker run -p 3000:80 ImageName ("the name hash from created container from the image")
+# to build an image docker build -t ImageName .
 EXPOSE 80
 
 CMD [ "node", "server.js" ]
