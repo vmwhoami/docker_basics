@@ -12,7 +12,8 @@ COPY . .
 
 EXPOSE 80
 
-# The next commented line is the equivalent of adding another -v app/node_moduless
+# The next commented line is the equivalent of adding another -v app/node_modules
+# This way you would have to rebuild the image
 # VOLUME [ "app/node_modules" ]
 
 CMD [ "node", "server.js" ]
