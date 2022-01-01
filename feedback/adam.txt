@@ -1,0 +1,2 @@
+Adam is a good boy
+adam.txt

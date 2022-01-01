@@ -60,7 +60,7 @@ input:focus,
 textarea:focus {
   border-color: #010035;
   outline: none;
-  background-color: #ffe6ff;
+  background-color: #f6fcff;
 }
 
 button {

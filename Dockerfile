@@ -16,7 +16,7 @@ EXPOSE 80
 # This way you would have to rebuild the image
 # VOLUME [ "app/node_modules" ]
 
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]
 
 #Commands to build the image 
 # -t, --tag list                Name and optionally a tag in the 'name:tag' format
