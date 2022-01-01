@@ -12,6 +12,9 @@ COPY . .
 
 EXPOSE 80
 
+# The next commented line is the equivalent of adding another -v app/node_moduless
+# VOLUME [ "app/node_modules" ]
+
 CMD [ "node", "server.js" ]
 
 #Commands to build the image 
@@ -23,4 +26,8 @@ CMD [ "node", "server.js" ]
 #docker run -p 3000:80 -d --name <container_name_> --rm <image_name>
 
 #Bind mount command
-# docker run -p 3000:80 -d --name my_container --rm -v /home/vmwhoami/Desktop/docker_training/:/app modulethree
+# docker run -p 3000:80 -d --name my_container --rm -v "/home/vmwhoami/Desktop/docker_training/:/app" modulethree
+
+
+#There was a problem with the image build.
+# It had no node_modules folder.
