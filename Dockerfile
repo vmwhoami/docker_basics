@@ -18,3 +18,9 @@ CMD [ "node", "server.js" ]
 # -t, --tag list                Name and optionally a tag in the 'name:tag' format
 #docker build -t <image_name> .    #builds the image 
 #docker build -t node-app .
+
+#Commands to run the image
+#docker run -p 3000:80 -d --name <container_name_> --rm <image_name>
+
+#Bind mount command
+# docker run -p 3000:80 -d --name my_container --rm -v /home/vmwhoami/Desktop/docker_training/:/app modulethree
