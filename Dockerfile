@@ -10,7 +10,9 @@ RUN npm install
 # next line copies the content of where this file is located(Dockerfile) to workdirfolder (/app)
 COPY . .
 
-EXPOSE 80
+ENV PORT 80
+
+EXPOSE $PORT
 
 # The next commented line is the equivalent of adding another -v app/node_modules
 # This way you would have to rebuild the image
